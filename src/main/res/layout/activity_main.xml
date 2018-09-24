@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgma"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/paddingBorders"
+        android:paddingTop="@dimen/paddingBorders"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textSize="@dimen/textViewTitleSize"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textViewTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:paddingStart="@dimen/paddingBorders"
+        android:paddingEnd="@dimen/paddingBorders"
+        android:text="@string/titleTeamA"
+        android:textAlignment="center"
+        android:textColor="@color/TeamA"
+        android:textSize="@dimen/textViewTeamSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewTitle"
+        android:paddingRight="@dimen/paddingBorders"
+        android:paddingLeft="@dimen/paddingBorders"
+        android:text="@string/titleTeamB"
+        android:textAlignment="center"
+        android:textColor="@color/TeamB"
+        android:textSize="@dimen/textViewTeamSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTeamAScoreA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTeamB"
+        android:paddingLeft="@dimen/paddingBorders"
+        android:paddingRight="@dimen/paddingBorders"
+        android:text="@string/initial_score"
+        android:textAlignment="center"
+        android:textColor="@color/TeamA"
+        android:textSize="@dimen/textViewScoreSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTeamAScoreB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@id/textViewTeamB"
+        android:layout_below="@+id/textViewTeamB"
+        android:paddingRight="@dimen/paddingBorders"
+        android:paddingLeft="@dimen/paddingBorders"
+        android:text="@string/initial_score"
+        android:textAlignment="center"
+        android:textColor="@color/TeamB"
+        android:textSize="@dimen/textViewScoreSize"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/butonPointA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/butonPointB"
+        android:layout_below="@id/textViewTeamAScoreA"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/paddingButton"
+        android:layout_marginEnd="@dimen/paddingButton"
+        android:onClick="addPointA"
+        android:text="@string/add_a_point"
+        android:textAlignment="center"
+        android:textColor="@color/TeamA"
+        android:textSize="@dimen/buttonText"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/butonPointB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTeamAScoreB"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/paddingButton"
+        android:textColor="@color/TeamB"
+        android:textAlignment="center"
+        android:textSize="@dimen/buttonText"
+        android:textStyle="bold"
+        android:onClick="addPointB"
+        android:text="@string/add_a_point" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/paddingButton"
+        android:layout_marginStart="@dimen/paddingButton"
+        android:textColor="@color/TeamB"
+        android:textAlignment="center"
+        android:textSize="@dimen/buttonText"
+        android:textStyle="bold"
+        android:onClick="Reset"
+        android:text="@string/Reset" />
+
+</RelativeLayout>

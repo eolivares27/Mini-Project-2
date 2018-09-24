@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="textViewTitleSize">30sp</dimen>
+    <dimen name="textViewTeamSize">25sp</dimen>
+    <dimen name="textViewScoreSize">250sp</dimen>
+    <dimen name="paddingBorders">25dp</dimen>
+    <dimen name="paddingButton">25dp</dimen>
+    <dimen name="buttonText">20sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="winner_title_size">45sp</dimen>
+    <dimen name="winner_team_size">100sp</dimen>
+</resources>
+
+
+

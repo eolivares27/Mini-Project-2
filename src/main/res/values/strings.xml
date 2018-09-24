@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Team Score Counter</string>
+    <string name="title">SCOREBOARD</string>
+    <string name="titleTeamA">Team A</string>
+    <string name="titleTeamB">Team B</string>
+    <string name="initial_score">0</string>
+    <string name="add_a_point">Add a Point</string>
+    <string name="title_activity_winner">WinnerActivity</string>
+    <string name="winner_title">The winner is:</string>
+    <string name="Reset">Reset</string>
+</resources>
